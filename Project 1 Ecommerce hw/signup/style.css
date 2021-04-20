@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Original+Surfer&display=swap');
+
+
+:root {
+    --sucess-color: green;
+    --error-color: red;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-size: 79em;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Bungee', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* margin-left: 750px; */
+    margin-left: 750px;
+    
+
+
+}
+body.pg1 {
+    background-image: url(bg3.jpg);
+    background-size: 79em;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Bungee', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* margin-left: 750px; */
+    margin-left: 750px;
+}
+body.pg2 {
+    background-image: url(bg.jpg);
+    background-size: 79em;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Bungee', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* margin-left: 750px; */
+    margin-left: 750px;
+
+}
+
+.container {
+    background-color: 0;
+    border: 2px solid #777;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0, 0.3);
+    width: 400px;
+}
+
+h1.pg1{
+    font-family: 'Original Surfer', cursive;
+    color: #246b62;
+    background-image: url(bg1.jpg);
+    background-size: 10em;
+    background-position-x: 528px;
+    background-position-y: 317px;
+    font-size: 4em;
+    box-shadow: 0 2px 10px rgba(0,0,0, 0.3);
+    border-radius: 5px;
+    /* border: 2px solid #777; */
+    position: fixed;
+    left: 88px;
+    top: 13px;
+    width: 40%;
+    text-align: center;
+    
+}
+h1.pg2{
+    font-family: 'Original Surfer', cursive;
+    color: #246b62;
+    
+    background-size: 10em;
+    background-position-x: 528px;
+    background-position-y: 317px;
+    font-size: 5em;
+    box-shadow: 0 2px 10px rgba(0,0,0, 0.3);
+    border-radius: 5px;
+    /* border: 2px solid #777; */
+    position: fixed;
+    left: 79px;
+    top: 100px;
+    width: 89%;
+    text-align: center;
+    
+}
+
+h2 {
+    border-radius: 5px;
+    background-image: url(bg.jpg);
+    color: #777;
+    text-align: center;
+    margin: 0 0 20px;
+    font-family: 'Bungee', cursive;
+}
+
+.form {
+    padding: 30px 40px
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+
+}
+
+.form-control label{
+    background-image: url(bg.jpg);
+    /* background-color: black; */
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 5px;    
+    width: 45%;
+}
+
+.form input{
+    border: 2px solid #ecf0f1;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input{
+    border-color: var(--sucess-color);
+}
+
+
+.form-control.error input{
+    border-color: var(--error-color);
+}
+
+.form-control small{
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;  
+    left: 0; 
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+    
+}
+
+.form button{
+    cursor: pointer;
+    /* background-image: url(bg.jpg); */
+    background-color: rgb(28, 235, 217);
+    border-radius: 5px;
+    border: 2px solid #777;
+    
+    padding: 5px;
+    color: #777;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    font-family: 'Bungee', cursive;
+
+}

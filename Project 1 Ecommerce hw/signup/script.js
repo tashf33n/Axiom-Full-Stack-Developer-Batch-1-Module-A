@@ -37,7 +37,11 @@ form.addEventListener('submit', function(e){
     }
     if(password2.value === '') {
         showError(password2,'Confirm Password is required')
-    } else {
+    }else if(password.value != password2.value){
+        showError(password2,'Confirm Password Incorrect')
+    }else if(password.value === password2.value){
+        window.location = "hello.html"
+    }else{
         showSuccess(password2);
     }
 });
