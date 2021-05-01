@@ -21,7 +21,8 @@ body {
     justify-content: center;
     min-height: 100vh;
     /* margin-left: 750px; */
-    margin-left: 750px;
+    /* margin-left: 750px; */
+    margin: 0;
     
 
 
@@ -37,7 +38,8 @@ body.pg1 {
     justify-content: center;
     min-height: 100vh;
     /* margin-left: 750px; */
-    margin-left: 750px;
+    /* margin-left: 750px; */
+    margin: 0;
 }
 body.pg2 {
     background-image: url(bg.jpg);
