@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="progress.css">
+    <script src="https://kit.fontawesome.com/cc9f1d97d6.js" crossorigin="anonymous"></script>
+    <title>Custom Video Player</title>
+</head> 
+<body>
+    
+    <!-- This is the video player. Poster gives the thubnail and src gives the actual location to the video -->
+    <video src="videos/tg2.mp4" id="video" class="screen" poster="images/tg2c.jpg"></video>
+    <!-- Adding custom control for the video -->
+    <div class="controls">
+        <!-- This is the play button -->
+        <button class="btn" id="play">
+            <!-- Font Awesome Play button -->
+            <i class="fa fa-play fa-2x"></i>
+        </button>
+        <!-- This is the stop button -->
+        <button class="btn" id="stop">
+            <!-- Font Awesome Stop button -->
+            <i class="fa fa-stop fa-2x"></i>
+        </button>
+        
+        <!-- This is the progress button -->
+        <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0"/>
+        <!-- This is time duration -->
+        <span class="timestamp" id="timestamp">00:00</span>
+    </div>
+    <h1>Custom Video Player</h1>
+
+    <script src="script.js"></script>
+</body>
+</html>
