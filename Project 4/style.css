@@ -1,0 +1,61 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    color: darkgreen;
+}
+
+.btn{
+    background-color: darkgreen;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.currency{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency select{
+    padding: 10px 20px 10px 10px;
+    border: 1px solid grey;
+    font-size: 16px;
+
+}
+
+.currency input{
+    font-size: 24px;
+    border: 0;
+    background: transparent;
+    text-align: right;
+}
+
+.swap-rate-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate{
+    color: darkgreen;
+}
+
+select:focus, input:focus, button.focus
