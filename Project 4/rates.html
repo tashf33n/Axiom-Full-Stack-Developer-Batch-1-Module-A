@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>All Currency Rates</title>
+</head>
+<body>
+    <script>
+        const currencyOne = document.getElementById('currency-one');
+        const currencyTwo = document.getElementById('currency-two');
+
+        function calculate(){
+    //Get the curerncy code for currency one and two
+    const currencyOneCode = currencyOne.value;    
+    const currencyTwoCode = currencyTwo.value;    
+    //Send requets to ExchangeRate-API for conversion rates for currency one
+    fetch(`https://v6.exchangerate-api.com/v6/8789a5988e67403a86c6e093/pair/${currencyOneCode}/${currencyTwoCode}`)
+
+    .then(res =>res.json())
+    .then(data =>  {
+    
+    //Get the conversion rate from currency One to currency two
+    const conversionRate = data.conversion_rate;
+    //Update the DOM to display the conversion rate
+    rate.innerText = `1 ${currencyOneCode} = ${conversionRate} ${currencyTwoCode}`;
+    
+    //Update the Currency Two Amount
+    amountCurrencyTwo.value = (amountCurrencyOne.value * conversionRate)
+    .toFixed(2);
+    }
+    );
+    
+};
+
+calculate();
+
+    </script>
+</body>
+</html>

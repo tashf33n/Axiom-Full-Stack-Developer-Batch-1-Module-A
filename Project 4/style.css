@@ -13,11 +13,22 @@ body{
     height: 100vh;
     margin: 0;
     padding: 20px;
+    overflow: scroll;
 }
 
 h1{
     color: darkgreen;
 }
+
+.rates-h1{
+    padding-top: 60px;
+    padding-bottom: 450px;
+    
+
+}
+
+
+
 
 .btn{
     background-color: darkgreen;
@@ -25,6 +36,7 @@ h1{
     border-radius: 5px;
     font-size: 12px;
     padding: 5px 10px;
+    cursor: pointer;
 }
 
 .currency{
@@ -58,4 +70,20 @@ h1{
     color: darkgreen;
 }
 
-select:focus, input:focus, button.focus
+select:focus, input:focus, button:focus {
+    outline: 0;
+}
+
+.all-currency{
+    background-color: darkgreen;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* .currency-display{
+    display: block;
+} */
