@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Meal Generator</title>
+</head>
+<body>
+    <div class="container">
+            
+        <a href="#" onclick="history.go(-0.5)" class="heading"><h1>Meal Generator</h1></a>
+        <div class="flex">
+            <!-- Search Form -->
+            <form class="flex" id="submit">
+                <input type="text" id="search" placeholder="Please enter your craving"/>
+                <button class="search-btn" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <!-- Random Meal Generator Button -->
+            <button class="generate-btn" id="generate">
+                <i class="fas fa-random"></i>
+            </button>
+        </div>
+
+        <!-- Heading for the search results -->
+        <div id="result-heading"></div>
+
+        <!-- Div to contain the meals returnd form API -->
+        <div class="meals" id="meals"></div>
+        
+
+        <!-- Details of selected meal -->
+        <div id="selected-meal"></div>        
+        
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
