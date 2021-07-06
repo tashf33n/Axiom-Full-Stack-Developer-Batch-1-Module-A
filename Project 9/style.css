@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{ 
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e1e8eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    margin: 30px auto;
+    width: 350px;
+}
+
+h1{
+    letter-spacing: 1.5px;
+    margin-top: 0;
+}
+
+h3{
+    margin: 40px 0 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #343A40;
+}
+
+h4{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.credit-debit-container{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10;
+}
+
+.credit-debit-container > div{
+    flex: 1;
+    text-align: center;
+}
+
+.credit-debit-container > div:first-of-type{
+    border-right: 1px solid #343A40;
+}
+
+.money{
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    margin: 5px 0;
+}
+
+
+.money.credit{
+    color: #16C79A
+}
+
+
+.money.debit{
+    color: #F55C47
+ 
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.list li{
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.list li.debit{
+    border-right: 10px solid #F55C47;    
+}
+
+.list li.credit{
+    border-right: 10px solid #16C79A;
+}
+
+.delete-btn{
+    background-color: #BE0000;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    border-radius: 100%;
+    position: absolute;
+    right: 102%;
+    top: 20%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.list li:hover  .delete-btn{
+    opacity: 1;
+}
+
+label{
+    display: inline-block;
+    margin: 8px;
+}
+
+input{
+    display: block;
+    border-radius: 5px;
+    border: 2px solid #343A40;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn{
+    background-color: rgb(163, 169, 175);
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(56, 57, 58);
+    color: white;
+}
+
+
