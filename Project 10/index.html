@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Player</title>
+</head>
+<body>
+    <!-- Project Title -->
+    <h1>Music Player</h1>
+    <!-- Container for music player -->
+    <div class="container" id="container">
+        <!-- Container about the current info about the song -->
+        <div class="info">
+            <!-- Placeholder: Name of the current song will be added here -->
+            <h4 id="song-title">Ertugul</h4>
+            <!-- Placeholder: Progress bar showing progress of playback of current song -->
+            <div class="progress" id="progress">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </div>
+        <!-- This is actual audio player -->
+        <audio src="music/Ertugul.mp3" id="audio"></audio>
+        <!-- Album art -->
+        <div class="album-art">
+            <img src="images/Ertugul.png" alt="album-art" id="album-art"/>  
+        </div>
+        <!-- Navigation button to change songs -->
+        <div class="nav">
+            <!-- Previous button: change to previous song -->
+                <button id="previous" class="nav-btn">
+                    <i class="fas fa-backward"></i>
+                </button>
+            <!-- Previous button: play/pause song -->
+                <button id="play" class="nav-btn nav-btn-large">
+                    <i class="fas fa-play"></i>
+                </button>
+            <!-- Previous button: change to next song -->
+                <button id="next" class="nav-btn">
+                    <i class="fas fa-forward"></i>
+                </button>
+                <div class="vol-icon">
+                    
+                </div>
+                
+                <div controls class="volume" id="volume">
+                    <i class="fas fa-volume"></i>
+                    <div class="volume-bar" id="volume-bar"></div>
+                </div>
+            </div> 
+        </div>
+        <!-- <figure>
+            <figcaption>Listen to the T-Rex:</figcaption>
+            <audio
+                controls
+                src="music/Ertugul.mp3" id="audio">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </figure> -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
