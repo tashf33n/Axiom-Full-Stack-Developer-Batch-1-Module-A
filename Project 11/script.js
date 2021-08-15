@@ -15,7 +15,7 @@ async function fetchPosts(){
     const data = await res.json();
     return data;
 }
-
+ 
 //Function to render the posts fetched form API
 async function renderPosts(){
     //Fetch the data from the API that we want to render
